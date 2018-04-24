@@ -1,1 +1,5 @@
 /* This file is for your main application css. */
+
+.real_logo {
+  background-image: url(background.jpg);
+}
