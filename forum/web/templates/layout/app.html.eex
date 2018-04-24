@@ -37,7 +37,7 @@
           <ul class="nav nav-pills pull-right">
           </ul>
         </nav>
-        <span class="real_logo"> okay there is supposed to be an imagine here but it just doesnt want to work....... use your imagination >:(</span>
+        <span class="real_logo">placeholder for picture</span>
       </header>
       <p
         class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
