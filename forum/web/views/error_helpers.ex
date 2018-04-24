@@ -1,4 +1,4 @@
-defmodule Forum.ErrorHelpers do
+defmodule Rumbl.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -32,9 +32,9 @@ defmodule Forum.ErrorHelpers do
     #     dgettext "errors", "is invalid"
     #
     if count = opts[:count] do
-      Gettext.dngettext(Forum.Gettext, "errors", msg, msg, count, opts)
+      Gettext.dngettext(Rumbl.Gettext, "errors", msg, msg, count, opts)
     else
-      Gettext.dgettext(Forum.Gettext, "errors", msg, opts)
+      Gettext.dgettext(Rumbl.Gettext, "errors", msg, opts)
     end
   end
 end

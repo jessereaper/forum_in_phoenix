@@ -1,3 +1,3 @@
-defmodule Forum.PageView do
-  use Forum.Web, :view
+defmodule Rumbl.PageView do
+  use Rumbl.Web, :view
 end

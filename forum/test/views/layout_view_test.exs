@@ -1,3 +1,3 @@
-defmodule Forum.LayoutViewTest do
-  use Forum.ConnCase, async: true
+defmodule Rumbl.LayoutViewTest do
+  use Rumbl.ConnCase, async: true
 end

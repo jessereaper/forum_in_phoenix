@@ -6,15 +6,15 @@
 use Mix.Config
 
 # General application configuration
-config :forum,
-  ecto_repos: [Forum.Repo]
+config :rumbl,
+  ecto_repos: [Rumbl.Repo]
 
 # Configures the endpoint
-config :forum, Forum.Endpoint,
+config :rumbl, Rumbl.Endpoint,
   url: [host: "localhost"],
-  secret_key_base: "sXCtrDva8tjNAMqzaJhqKlq8mTnH5hRiN3jsbXymGua8u0cihJJWuXrlW2dGiCj4",
-  render_errors: [view: Forum.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Forum.PubSub,
+  secret_key_base: "B8JxLSEemnG3o2QNWwFJsudJKsQYVO8M83cBdnSMXvMcKRhCLnwdb3psdiZNndjt",
+  render_errors: [view: Rumbl.ErrorView, accepts: ~w(html json)],
+  pubsub: [name: Rumbl.PubSub,
            adapter: Phoenix.PubSub.PG2]
 
 # Configures Elixir's Logger

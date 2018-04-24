@@ -1,5 +1,5 @@
-defmodule Forum.PageController do
-  use Forum.Web, :controller
+defmodule Rumbl.PageController do
+  use Rumbl.Web, :controller
 
   def index(conn, _params) do
     render conn, "index.html"

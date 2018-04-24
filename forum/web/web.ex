@@ -1,12 +1,12 @@
-defmodule Forum.Web do
+defmodule Rumbl.Web do
   @moduledoc """
   A module that keeps using definitions for controllers,
   views and so on.
 
   This can be used in your application as:
 
-      use Forum.Web, :controller
-      use Forum.Web, :view
+      use Rumbl.Web, :controller
+      use Rumbl.Web, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -22,7 +22,7 @@ defmodule Forum.Web do
 
       import Ecto
       import Ecto.Changeset
-      import Ecto.Query
+      import Ecto.Query, only: [from: 1, from: 2]
     end
   end
 
@@ -30,12 +30,12 @@ defmodule Forum.Web do
     quote do
       use Phoenix.Controller
 
-      alias Forum.Repo
+      alias Rumbl.Repo
       import Ecto
-      import Ecto.Query
+      import Ecto.Query, only: [from: 1, from: 2]
 
-      import Forum.Router.Helpers
-      import Forum.Gettext
+      import Rumbl.Router.Helpers
+      import Rumbl.Gettext
     end
   end
 
@@ -49,9 +49,9 @@ defmodule Forum.Web do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import Forum.Router.Helpers
-      import Forum.ErrorHelpers
-      import Forum.Gettext
+      import Rumbl.Router.Helpers
+      import Rumbl.ErrorHelpers
+      import Rumbl.Gettext
     end
   end
 
@@ -65,10 +65,10 @@ defmodule Forum.Web do
     quote do
       use Phoenix.Channel
 
-      alias Forum.Repo
+      alias Rumbl.Repo
       import Ecto
-      import Ecto.Query
-      import Forum.Gettext
+      import Ecto.Query, only: [from: 1, from: 2]
+      import Rumbl.Gettext
     end
   end
 

@@ -1,5 +1,5 @@
-defmodule Forum.PageControllerTest do
-  use Forum.ConnCase
+defmodule Rumbl.PageControllerTest do
+  use Rumbl.ConnCase
 
   test "GET /", %{conn: conn} do
     conn = get conn, "/"
