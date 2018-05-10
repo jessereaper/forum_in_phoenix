@@ -27,4 +27,6 @@
   </tbody>
 </table>
 
+<button class="button-two">
 <%= link "New post", to: post_path(@conn, :new) %>
+</button>

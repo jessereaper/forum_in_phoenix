@@ -2,3 +2,10 @@
   <h2>welcome to the netherlands >:D </h2>
   <p class="lead">best forum in the entire interwebs btw</p>
 </div>
+<div class="jumy">
+  <div class="sub-main">
+    <button class="buttony">
+      <%= link "posts", to: post_path(@conn, :index) %>
+    </button>
+  </div>
+</div>

@@ -7050,3 +7050,117 @@ form.link, form.button {
   background: -webkit-linear-gradient(to top, #f7b733, #fc4a1a);
   background: linear-gradient(to top, #f7b733, #fc4a1a);
 }
+
+.jumy {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #eee;
+  border-radius: 20px;
+}
+
+.buttony {
+  border-radius: 4px;
+  background-color: #d35400;
+  border: none;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+}
+
+.buttony span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.buttony span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.buttony span {
+  padding-right: 25px;
+}
+
+.buttony span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.buttony {
+  text-align: center;
+  cursor: pointer;
+  font-size: 24px;
+  margin: 0 0 0 40px;
+}
+
+.sub-main {
+  width: 30%;
+  margin-top: 22px;
+  margin-left: 200px;
+  margin-bottom: 22px;
+}
+
+.buttony:hover span {
+  padding-right: 25px;
+}
+
+.buttony:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+a:hover {
+  color: #2ecc71;
+}
+
+a::after {
+  color: black;
+}
+
+/*Button Two*/
+
+.button-two {
+  border-radius: 4px;
+  background-color: #d35400;
+  border: none;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  text-align: center;
+  cursor: pointer;
+  font-size: 24px;
+  margin: 0 0 0 195px;
+}
+
+.button-two span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button-two span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button-two:hover span {
+  padding-right: 25px;
+}
+
+.button-two:hover span:after {
+  opacity: 1;
+  right: 0;
+}

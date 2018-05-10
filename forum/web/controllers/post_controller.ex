@@ -15,6 +15,7 @@ defmodule Rumbl.PostController do
 
   def create(conn, %{"post" => post_params}) do
     changeset = Post.changeset(%Post{}, post_params)
+    # associate with current_user
 
     case Repo.insert(changeset) do
       {:ok, _post} ->
